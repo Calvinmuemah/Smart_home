@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Firebase initialization
-const serviceAccount = require('./serviceAccountKey.json'); // path to your key
+const serviceAccount = require('./serviceAccountKey.json');
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: 'https://smarthome-d3e80-default-rtdb.firebaseio.com'
